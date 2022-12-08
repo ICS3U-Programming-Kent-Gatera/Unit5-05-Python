@@ -2,7 +2,7 @@
 
 # Created by : Kent
 # Created on : December 2022
-# This program prints out your name and address using default function parameters
+# This program prints out your name and address using default function parameters.
 
 
 def full_name(first_name, last_name, middle_name=None):
