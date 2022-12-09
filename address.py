@@ -21,8 +21,8 @@ def address(post, address, city, province, apt=None):
     # return the full formal
     full_address = address
     if apt != None:
-        full_address = "Unit :" + apt + " " + full_address
-    full_address = full_address + ", " + city + ", " + province + "\n" + post
+        full_address = "Unit :" + apt + "-" + full_address
+    full_address = full_address + ", " + city + "\n" + province + " " + post
 
     return full_address
 
@@ -70,7 +70,7 @@ def main():
             apt=apt_num,
         )
         final_address = final_address.upper()
-    print(name + "\n" + final_address)
+    print("your canadian mailing address is:\n" + name + "\n" + final_address)
 
 
 if __name__ == "__main__":
